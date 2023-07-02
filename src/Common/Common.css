@@ -1,0 +1,16 @@
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  padding: 1em 2em;
+}
+
+.bg-blue {
+  background-color: var(--clr-primary-3);
+}
+.bg-blue a {
+  color: white;
+}

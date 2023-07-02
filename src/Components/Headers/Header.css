@@ -1,0 +1,76 @@
+.header {
+  /* position: relative; */
+  background: var(--gradient);
+  padding: 38px 2em 98px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navigation .company-logo {
+  z-index: 99;
+  flex-basis: 40%;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navigation .navbar {
+  display: none;
+  flex-basis: 70%;
+}
+
+.navbar.navbar-mobile {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 57px;
+  animation: mobile-menu .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+.navbar.navbar-mobile li {
+  padding: 1em 2em;
+}
+
+.navbar.navbar-mobile .nav-buttons li {
+  padding: 0 2em;
+}
+
+.navigation .navbar .nav-links li {
+  padding: 1em;
+}
+
+.nav-links li a img {
+  height: 100%;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
+.hamburger-menu {
+  font-weight: 700;
+  z-index: 99;
+}
+
+@media (min-width: 769px) {
+}
+
+/* Animation keyFrame */
+@keyframes mobile-menu {
+  0% {
+    height: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    height: 100vh;
+    transform: translatex(0);
+  }
+}
